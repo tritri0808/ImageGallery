@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive Image Gallery</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Responsive Image Gallery with jQuery" />
+    <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+    <meta name="author" content="Codrops" />
+    <!-- Link Swiper's CSS -->
+    @using System.Web.Optimization
+    @Styles.Render("~/Content/css")
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+    <!-- Demo styles -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="http://tympanus.net/Development/Elastislide/"><span>&laquo; Previous Demo: </span>Elastislide</a>
+            <span class="right_ab">
+                <a href="http://www.flickr.com/photos/smanography/" target="_blank">Images by Shermeee</a>
+                <a href="http://creativecommons.org/licenses/by/2.0/deed.en_GB">CC BY 2.0</a>
+                <a href="http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/"><strong>back to the Codrops post</strong></a>
+            </span>
+            <div class="clr"></div>
+        </div><!-- header -->
+
+        <h1>Responsive Image Gallery <span>A jQuery image gallery with a thumbnail carousel</span></h1>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/1.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/2.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/4.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/5.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/6.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/7.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/8.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/9.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/10.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/11.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/12.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/13.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/14.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/15.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/16.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/17.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/18.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/19.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/20.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/21.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/22.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/23.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../Upload_File/Image/thumbs/24.jpg)"></div>
+                </div>
+            </div>
+            <div class="es-nav"><div class="swiper-button-prev swiper-button-white"></div></div>
+            <div class="es-nav-next"><div class="swiper-button-next swiper-button-white"></div></div>
+        </div>
+
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+       
+            <div class="gallery-top">           
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/1.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">From off a hill whose concave womb reworded</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/2.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">A plaintful story from a sistering vale</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/3.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">My spirits to attend this double voice accorded</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/4.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">And down I laid to list the sad-tuned tale</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/5.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Ere long espied a fickle maid full pale</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/6.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Tearing of papers, breaking rings a-twain</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/7.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Storming her world with sorrow's wind and rain</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/8.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Upon her head a platted hive of straw</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/9.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Which fortified her visage from the sun</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/10.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Whereon the thought might think sometime it saw</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/11.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">The carcass of beauty spent and done</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/12.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Time had not scythed all that youth begun</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/13.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Nor youth all quit; but, spite of heaven's fell rage</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/14.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Some beauty peep'd through lattice of sear'd age</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/15.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Oft did she heave her napkin to her eyne</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/16.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Which on it had conceited characters</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/17.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Laundering the silken figures in the brine</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/18.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/19.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">That season'd woe had pelleted in tears</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/20.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">And often reading what contents it bears</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/21.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">As often shrieking undistinguish'd woe</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/23.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">In clamours of all size, both high and low</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="../Upload_File/Image/24.jpg" class="swiper-lazy" onclick="imgClick()">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div class="caption">Sometimes her levell'd eyes their carriage ride</div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="img-nav"><div class="swiper-button-prev swiper-button-white"></div></div>
+                <div class="img-nav-next"><div class="swiper-button-next swiper-button-white"></div></div>          
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+    <div class="description" onclick="descriptionClick()">
+        <h2>Nature's Artwork</h2> <br />
+        <p>
+            <a href="#" alt="Daniel Fleischhacker">POST PROCESSING</a><br>
+            <a href="#" alt="Daniel Fleischhacker">BILDBEARBEITUNG</a><br>
+            <a href="#" alt="Daniel Fleischhacker">WEBSITE</a><br>
+            <a href="#" alt="Daniel Fleischhacker">FACEBOOK</a><br>
+            Many techniques used on this image are demonstrated in my recently released set of videos. Just check out my website for more information.
+            ____
+
+            Viele der hier angewandten Techniken werden sehr ausführlich in meinen aktuellen Video Tutorials demonstriert. Mehr Infos dazu findet Ihr auf meiner Website.
+        </p>
+        <br />
+        <ul>
+            <li><span>Camera</span><div>Landscape</div></li>
+            <li><span>Focal Length</span><div>Landscape</div></li>
+            <li><span>Shutter Speed</span><div>Landscape</div></li>
+            <li><span>Aperture</span><div>Landscape</div></li>
+            <li><span>ISO</span><div>Landscape</div></li>
+            <li><span>Times Viewed</span><div>Landscape</div></li>
+            <li><span>Rating</span><div>Landscape</div></li>
+            <li><span>Category</span><div>Landscape</div></li>
+            <li><span>Copyright</span><div>Landscape</div></li>
+            <li><span>Avatar</span><div>Landscape</div></li>
+        </ul>
+    </div>
+    <!-- Swiper JS -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/swiper")
+    @Scripts.Render("~/bundles/main")
+
+
+</body>
+</html>
